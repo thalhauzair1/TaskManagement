@@ -59,7 +59,7 @@ const AddTask = ({ open, handleClose, task }) => {
     // prevent the default form submission behavior
     e.preventDefault();
     // check if the title, description, and due date are not empty
-    if (!input.title || !input.description || !input.dueDate) {
+    if (!input.title || !input.description ) {
       alert("Please fill in all fields");
       return;
     }
