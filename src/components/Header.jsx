@@ -3,6 +3,7 @@ import { Grid, Typography, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import AddTask from "./AddTask";
 
+// creating a Header component
 const Header = ({ openModal, isModalOpen, closeModal }) => {
   return (
     <header style={{ position: "sticky", top: 0, zIndex: 100, backgroundColor: "#1976d2", height: "10vh", padding: "0 1rem", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)" }}>

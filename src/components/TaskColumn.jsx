@@ -2,11 +2,12 @@ import React from "react";
 import { Grid, Typography, Paper, useTheme } from "@mui/material";
 import Tasks from "./Tasks";
 
+// Create a TaskColumn component
 const TaskColumn = ({ title, status }) => {
   const theme = useTheme();
   const columnColor = theme.palette.columns[status.toLowerCase()];
-  console.log(status+ " "+columnColor)
 
+  // Return a Grid component with a Paper component containing the title and a Tasks component
   return (
     <Grid
       item

@@ -24,7 +24,9 @@ function App() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+  
 
+  // Setting up the Theme for the app
   const theme = createTheme({
     palette: {
       mode: "light",
@@ -58,7 +60,9 @@ function App() {
   });
 
   return (
-    <ThemeProvider theme={theme}>
+    // This is used to apply the theme to the entire app
+    <ThemeProvider theme={theme}> 
+      {/*  This is used to apply the date adapter to the entire app */}
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Box
           sx={{
@@ -98,7 +102,7 @@ function App() {
 
             </Typography>
           </Box>
-
+            {/* Creating a 3 grid layout to display task */}
           <Box
             sx={{
               flexGrow: 1,
@@ -114,8 +118,8 @@ function App() {
               gap={10}
               sx={{
                 borderRadius: 5,
-                overflowY: "auto",
-                scrollBehavior: "smooth", // To enable smooth scrolling
+                overflowY: "auto scroll",
+                scrollBehavior: "smooth", 
                 padding: "2rem",
                 maxWidth: "80vw",
                 maxHeight: "80vh",
