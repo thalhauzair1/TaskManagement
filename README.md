@@ -25,7 +25,7 @@ To install the app, follow these steps:
 1. Clone the repository: `git clone https://github.com/thalhauzair1/TaskManagement.git`
 2. Navigate into the directory: `cd TaskManagement.git`
 3. Install the dependencies: `npm install`
-4. Start the app: `npm start`
+4. Start the app: `npm run dev`
 
 ## Usage
 
